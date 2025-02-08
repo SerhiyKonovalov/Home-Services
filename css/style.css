@@ -553,6 +553,14 @@ textarea.input {
   height: 0.75rem;
   background: #ff5e5e;
   border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__schedule:hover::before {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .menu {
