@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250208134420">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250208140515">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">
+				<a href="#" data-goto=".hero" class="header__logo">
 					<img src="img/logo.svg" alt="Logo">
 				</a>
 				<div class="header__menu menu">
@@ -243,7 +243,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="advantages" data-watch>
+			<section class="advantages" data-watch data-watch-threshold="0.3">
 				<div class="advantages__wrapper-bg">
 					<div class="advantages__container">
 						<div class="advantages__block-header block-header block-header--inline">
@@ -333,7 +333,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="how" data-watch>
+			<section class="how" data-watch data-watch-threshold="0.3">
 				<div class="how__container">
 					<div class="how__image">
 						<picture><source srcset="img/how/image.webp" type="image/webp"><img src="img/how/image.jpg" alt="Image"></picture>
@@ -365,7 +365,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews" data-watch>
+			<section class="reviews" data-watch data-watch-threshold="0.3">
 				<div class="reviews__container">
 					<div class="reviews__block-header block-header block-header--center">
 						<h2 class="block-header__title">Here our original reviews from trusted platform</h2>
@@ -499,7 +499,7 @@
 					<button hidden class="blog__view-more" type="button">View More</button>
 				</div>
 			</section>
-			<section class="questions" data-watch>
+			<section class="questions" data-watch data-watch-threshold="0.3">
 				<div class="questions__container">
 					<div class="questions__block-header block-header">
 						<h2 class="block-header__title">Frequently Asked Questions</h2>
@@ -567,7 +567,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="talk" data-watch>
+			<section class="talk" data-watch data-watch-threshold="0.3">
 				<div class="talk__container">
 					<div class="talk__content">
 						<div class="talk__block-header block-header">
@@ -603,9 +603,9 @@
 				</div>
 				<div class="footer__main main-footer">
 					<div class="main-footer__body">
-						<div class="main-footer__logo">
+						<a href="#" data-goto=".hero" class="main-footer__logo">
 							<img src="img/logo-white.svg" alt="Logo">
-						</div>
+						</a>
 						<div class="main-footer__text">
 							<p>Home Pro is your premier destination for top-notch smart home service and repair. </p>
 						</div>
@@ -660,7 +660,7 @@
 			<div class="footer__copy">©2023 HomePro. All rights reserved</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250208134420"></script>
+	<script src="js/app.min.js?_v=20250208140515"></script>
 </body>
 
 </html>
