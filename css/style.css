@@ -542,6 +542,7 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.625rem;
+  cursor: default;
 }
 
 .header__schedule::before {
@@ -558,9 +559,9 @@ textarea.input {
 }
 
 .header__schedule:hover::before {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .menu {
