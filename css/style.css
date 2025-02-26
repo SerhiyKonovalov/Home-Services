@@ -579,6 +579,9 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 0.3125rem;
@@ -753,8 +756,13 @@ textarea.input {
 }
 
 .main-footer__item {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.main-footer__item::before {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .main-footer__item:hover {
@@ -764,33 +772,23 @@ textarea.input {
 }
 
 .main-footer__item._icon-youtube:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   color: red;
 }
 
 .main-footer__item._icon-instagram:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: rgb(255, 181, 43);
+  color: rgb(236, 96, 255);
 }
 
 .main-footer__item._icon-facebook:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   color: rgb(65, 103, 207);
 }
 
 .main-footer__item._icon-twitter:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: rgb(81, 229, 255);
+  color: rgb(58, 225, 255);
 }
 
 .main-footer__item._icon-mail:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: rgb(146, 255, 56);
+  color: rgb(241, 184, 77);
 }
 
 .menu-footer__spollers {
@@ -1393,6 +1391,13 @@ textarea.input {
           justify-content: center;
 }
 
+.slide-reviews__avatar img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
 .slide-reviews__name {
   line-height: 1.33;
   font-weight: 700;
@@ -1428,6 +1433,9 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .blog__view-more::after {
@@ -1439,6 +1447,12 @@ textarea.input {
 
 .blog__view-more:hover {
   text-decoration: underline;
+}
+
+._watcher-view .blog__view-more {
+  -webkit-transition: all 1.5s 0.5s;
+  transition: all 1.5s 0.5s;
+  opacity: 1;
 }
 
 .item-blog {
@@ -1481,6 +1495,10 @@ textarea.input {
 
 .item-blog__text {
   line-height: 1.55;
+}
+
+.item-blog__text > p:not(:last-child) {
+  margin-bottom: 0.75rem;
 }
 
 .item-blog__tags {
